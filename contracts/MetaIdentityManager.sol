@@ -240,4 +240,5 @@ contract MetaIdentityManager {
     function isRecovery(address identity, address recoveryKey) public constant returns (bool) {
         return recoveryKeys[identity] == recoveryKey;
     }
+
 }
