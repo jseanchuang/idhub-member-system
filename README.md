@@ -23,7 +23,7 @@ B. 文章閱讀
   * [x] [內容大意](./docs/indy-node.1.md)
   * [x] [讀後心得](./docs/indy-node.2.md)
 2. [OriginTrail-White-Paper](https://origintrail.io/storage/documents/OriginTrail-White-Paper.pdf)
-  * [x] [內容大意](./docs/OriginTrail.1.md)
+  * [x] [內容大意](./docs/OriginTrail.1.md
   * [x] [讀後心得](./docs/OriginTrail.2.md)
 
 
@@ -32,11 +32,11 @@ B. 文章閱讀
 ### Ropsten testnet (id: 3)
 |Contract|Address|
 | --|--|
-|[IdentityManager](./contracts/IdentityManager.sol)|[0x27500ae27b6b6ad7de7d64b1def90f3e6e7ced47](https://ropsten.etherscan.io/address/0x27500ae27b6b6ad7de7d64b1def90f3e6e7ced47)|
-|[TxRelay](./contracts/TxRelay.sol)|[0xa5e04cf2942868f5a66b9f7db790b8ab662039d5](https://ropsten.etherscan.io/address/0xa5e04cf2942868f5a66b9f7db790b8ab662039d5)|
-|[MetaIdentityManager](./contracts/MetaIdentityManager.sol)|[0xbdaf396ce9b9b9c42cd40d37e01b5dbd535cc960](https://ropsten.etherscan.io/address/0xbdaf396ce9b9b9c42cd40d37e01b5dbd535cc960)|
-|[ProfileManager](./contracts/ProfileManager.sol)|[0xbdaf396ce9b9b9c42cd40d37e01b5dbd535cc960](https://ropsten.etherscan.io/address/0xbdaf396ce9b9b9c42cd40d37e01b5dbd535cc960)|
-|[ClaimManager](./contracts/ClaimManager.sol)|[0xbdaf396ce9b9b9c42cd40d37e01b5dbd535cc960](https://ropsten.etherscan.io/address/0xbdaf396ce9b9b9c42cd40d37e01b5dbd535cc960)|
+|[IdentityManager](./contracts/IdentityManager.sol)|[0xdd90eed19e4ea80be2bc9faef6ccbe501aac876b](https://ropsten.etherscan.io/address/0xdd90eed19e4ea80be2bc9faef6ccbe501aac876b)|
+|[TxRelay](./contracts/TxRelay.sol)|[0xa6aaa977c4a4b4d559d7be2c748a865633943224](https://ropsten.etherscan.io/address/0xa6aaa977c4a4b4d559d7be2c748a865633943224)|
+|[MetaIdentityManager](./contracts/MetaIdentityManager.sol)|[0xb2c2de415b1653d66231ec5876ae43b7094921bb](https://ropsten.etherscan.io/address/0xb2c2de415b1653d66231ec5876ae43b7094921bb)|
+|[ProfileManager](./contracts/ProfileManager.sol)|[0x639f3b90c65bcd79659fdd4f149e565a4d056b75](https://ropsten.etherscan.io/address/0x639f3b90c65bcd79659fdd4f149e565a4d056b75)|
+|[ClaimManager](./contracts/ClaimManager.sol)|[0x6e0e2863322a9977604db4634bd5fa10b599405f](https://ropsten.etherscan.io/address/0x6e0e2863322a9977604db4634bd5fa10b599405f)|
 
 ### How to run this project
 
@@ -52,6 +52,7 @@ truffle test --network local
 
 3. Deply to testnet
 ```
+truffle migrate --network ropsten
 ```
 
 ### Reference projects

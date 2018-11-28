@@ -1,5 +1,7 @@
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const TestRPC = require("ganache-cli");
+const PrivateKeyProvider = require("truffle-privatekey-provider");
+var privateKey = "5A8F7179A8B4B9076406DD5E473BA968D59B1DF2DDF82E54C8075B800FF5173D";
 
 let provider
 
@@ -50,35 +52,25 @@ module.exports = {
       network_id: "*" // Match any network id
     },
     ropsten: {
-      get provider() {
-        return getProvider("https://ropsten.infura.io/")
-      },
+      provider: new PrivateKeyProvider(privateKey, "https://ropsten.infura.io/"),
       gas: 4004580,
       network_id: 3
     },
     rinkeby: {
-      get provider() {
-        return getProvider("https://rinkeby.infura.io/")
-      },
+      provider: new PrivateKeyProvider(privateKey, "https://rinkeby.infura.io/"),
       network_id: 4
     },
     infuranet: {
-      get provider() {
-        return getProvider("https://infuranet.infura.io/")
-      },
+      provider: new PrivateKeyProvider(privateKey, "https://infuranet.infura.io/"),
       network_id: "*"
     },
     kovan: {
-      get provider() {
-        return getProvider("https://kovan.infura.io/")
-      },
+      provider: new PrivateKeyProvider(privateKey, "https://kovan.infura.io/"),
       gas: 4004580,
       network_id: 42
     },
     mainnet: {
-      get provider() {
-        return getProvider("https://mainnet.infura.io/")
-      },
+      provider: new PrivateKeyProvider(privateKey, "https://mainnet.infura.io/"),
       gas: 1704580,
       gasPrice: 1000000000,
       network_id: 1
