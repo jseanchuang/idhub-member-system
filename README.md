@@ -55,10 +55,55 @@ truffle test --network local
 truffle migrate --network ropsten
 ```
 
-### Reference projects
+### Contract interaction
+All the contracts has deployed on ropsten network. And verify code on etherscan. You can interact with contract through it. 
+
+1. Registration
+    
+    Call `registerIdentity` to MetaIdentityManager contract with owner and recoveryKey address parameters. 
+    
+    example tx: 0x4137f941e143b00712ac33097cf095bdf55f3ebdcb6b5c0f3e27f5809c74f84c
+    example identity: 0xcf430b62fb096c0fadcfebe827a13b26d8056569
+
+2. Edit profile
+    
+    Call `setName` to ProfileManager contract with identity address and specific name parameters.
+
+    example tx: 0xe277cedc3712034e35ee33f1a5a4b5c324070df06069ebfa1fbbef6eba92f532
+
+3. Make a claim
+
+    Call `addClaim` to ClaimManager contract with identity address, claimType, scheme, signature, data and uri parameters.
+
+    example tx: 0xdb7528e42496542401810e7dcd785db2b4d7e86dea2d59981f5dc8fbb16eb086
+
+4. Payment, transfer ETH between identity
+
+    Call `forwardTo` to MetaIdentityManager contract with sender, identity, destination, value and data parameters.
+
+    example tx: 0xe21ac2544c6eaf4178a3bd2af5c4e62d86589d833acb3c18d6617198c75255ae
+
+
+
+Note: Authorization and private key recovery will be update later.
+
+## Reference projects
 
 1. [uport-identity](https://github.com/uport-project/uport-identity) 
 
 2. [origin-playground](https://github.com/OriginProtocol/origin-playground)
 
 3. [ENS](https://github.com/ensdomains/ens)
+
+## Troubleshooting
+
+1. `Error: More than one instance of bitcore-lib found` when running truffle test. 
+
+    Because of package dependency issue. The easiest way is hardcode the package in node modules.
+    Edit file in `./node_modules/bitcore-lib/index.js`
+    ```
+    bitcore.versionGuard = function (version) {return;}
+    ```
+    Return the function directly.
+
+    reference: https://github.com/bitpay/bitcore/issues/1454

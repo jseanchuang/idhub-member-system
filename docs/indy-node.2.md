@@ -1,4 +1,4 @@
-＃ Hyperledger indy 讀後心得
+# Hyperledger indy 讀後心得
 
 Indy主要目的是在hyperledger區塊鍊上建立個人身份管理。
 此流程完整的詮釋了區塊鍊上個人身份的淺力。

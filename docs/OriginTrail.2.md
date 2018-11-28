@@ -1,4 +1,4 @@
-# OriginTrail 讀後心得
+# OriginTrail 讀後心得
 
 OriginTrail 希望透過區塊鍊技術來解決供應鏈間不透明的問題。
 
