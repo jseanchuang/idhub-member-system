@@ -23,7 +23,7 @@ B. 文章閱讀
   * [x] [內容大意](./docs/indy-node.1.md)
   * [x] [讀後心得](./docs/indy-node.2.md)
 2. [OriginTrail-White-Paper](https://origintrail.io/storage/documents/OriginTrail-White-Paper.pdf)
-  * [x] [內容大意](./docs/OriginTrail.1.md
+  * [x] [內容大意](./docs/OriginTrail.1.md)
   * [x] [讀後心得](./docs/OriginTrail.2.md)
 
 
