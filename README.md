@@ -1,4 +1,4 @@
-# IDHUB Interview Assignment
+# Interview Assignment
 
 ## Assigment description
 A. 會員身份 Smart Contract
